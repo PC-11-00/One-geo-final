@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# InteractiveNote-taking Application in ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+This project aims to create an interactive note-taking application using JavaScript and ReactJS. The application allows users to create, edit, drag, and export notes within a designated Notes Area. Additionally, users can export their notes to a .xlsx file format.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### Notes Area with Text Box Implementation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Notes Area Dimensions**: The Notes Area covers 3/4 of the window's width and 3/4 of the window's height.
+2. **Double-Click Functionality**: Users can double-click within the Notes Area to create a blue box-like structure, which serves as an editable text box.
+3. **Text Box Behavior**: Users can input text directly into the created text box.
+4. **Dragging Text**: Text elements within the Notes Area can be dragged by users.
+5. **Creating New Box**: Dropping text onto an empty space within the Notes Area generates a new blue box-like structure containing the dropped text.
+6. **Appending to Existing Box**: Dropping text onto an existing blue box-like structure appends the dragged text to the existing content within that structure.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Bonus Feature: Exporting Notes to .xlsx File
 
-### `npm test`
+1. **Export Notes Button**: An "Export Notes" button is integrated into the application.
+2. **Export Functionality**: Clicking the "Export Notes" button generates a .xlsx file containing the notes.
+3. **Note Representation**: Each note occupies a separate row in the .xlsx file, maintaining the sequence in which they were created. For each text box, the note's text, its distance from the top and left edges of the window, and the distance from the top-left corner of the window are stored.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deployment
 
-### `npm run build`
+The application is deployed and accessible at [https://one-geo-final.onrender.com](https://one-geo-final.onrender.com).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- JavaScript
+- ReactJS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+1. Access the deployed application at [https://one-geo-final.onrender.com](https://one-geo-final.onrender.com).
+2. Double-click within the Notes Area to create a text box and input your text.
+3. Drag text elements within the Notes Area to reposition them.
+4. Drop text onto empty spaces to create new text boxes or onto existing boxes to append text.
+5. Click the "Export Notes" button to export your notes to a .xlsx file.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Development
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run the application locally:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone this repository.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Start the development server using `npm start`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributors
 
-## Learn More
+- Pushpendra
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
